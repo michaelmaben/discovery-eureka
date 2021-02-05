@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(path = "/books")
-public class MovieResource {
+public class BookResource {
     @RequestMapping(path="/{bookId}")
     public Book getBookInfo(@PathVariable String bookId){
         return new Book("1", "Book-Info-1");
